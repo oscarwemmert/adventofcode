@@ -2,7 +2,7 @@
   "profiles": {
     "AdventOfCode": {
       "commandName": "Project",
-      "commandLineArgs": "--assignment 1 --part two"
+      "commandLineArgs": "--assignment 3 --part one"
     }
   }
 }

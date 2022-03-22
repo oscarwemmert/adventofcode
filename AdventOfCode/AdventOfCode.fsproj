@@ -7,14 +7,25 @@
 
 	
   <ItemGroup>
-    <None Include="Assignment1\Day 1 - Advent of Code 2021.htm" />
-	  <None Include="Assignment1\input.txt" >
+      <Compile Include="helpers.fs" />
+      <None Include="Assignment1\Day 1 - Advent of Code 2021.htm" />
+	  <None Include="Assignment2\Day 2 - Advent of Code 2021.htm" />
+
+	  <None Include="Assignment1\input.txt">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Include="Assignment2\input.txt">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <Compile Include="Assignment3\Assignment3.fs" />
+	  <None Include="Assignment3\input.txt">
 		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
 	  
 	  <Compile Include="CliArguments.fs" />
-	<Compile Include="Assignment1/Assignment1.fs" />
-    <Compile Include="Program.fs" />
+	  <Compile Include="Assignment1/Assignment1.fs" />
+	  <Compile Include="Assignment2\Assignment2.fs" />
+	  <Compile Include="Program.fs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,19 +1,11 @@
 ﻿module Assignment1
 
-type State<'TAcc, 'TItem> = { Acc:'TAcc; Prev:'TItem option }
-
-let readLines filePath = System.IO.File.ReadLines(filePath)
+open helpers.helpers
 
 let countIncreases acc item prev =
     match prev with
     | Some prev when item > prev -> acc + 1 
     | _ -> acc
-
-let foldprev f init l =
-    let folder state item =
-        { Acc = (f state.Acc item state.Prev); Prev = Some item  }
-    let res = Seq.fold folder { Acc = init; Prev = None } l
-    res.Acc    
 
 let run1 filepath =
    readLines filepath
